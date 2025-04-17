@@ -23,6 +23,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 // SEO metadata
 export const metadata: Metadata = {
   title: {
@@ -43,13 +44,23 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/favicon.ico", // favicon ขนาด 32x32 pixels
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png", // ไอคอนสำหรับ Apple devices (อาจมีขนาด 180x180)
+    other: {
+      rel: "icon",
+      url: "/favicon-16x16.png",
+      sizes: "16x16",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "th_TH",
     siteName: "DoHome E-commerce",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/logo.svg",
         width: 1200,
         height: 630,
         alt: "DoHome E-commerce",
@@ -65,6 +76,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${prompt.variable} ${geistSans.variable} ${geistMono.variable} font-prompt antialiased min-h-screen flex flex-col`}
       >

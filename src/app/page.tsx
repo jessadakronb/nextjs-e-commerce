@@ -1,12 +1,4 @@
 import Link from "next/link";
-// import Image from "next/image";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "DoHome - ศูนย์รวมสินค้าตกแต่งบ้านและวัสดุก่อสร้างคุณภาพ",
-  description:
-    "DoHome ศูนย์รวมสินค้าตกแต่งบ้าน เฟอร์นิเจอร์ วัสดุก่อสร้างคุณภาพ ราคาดี มีโปรโมชั่นมากมาย บริการจัดส่งทั่วประเทศ",
-};
 
 export default function Home() {
   // Sample featured products
@@ -108,7 +100,6 @@ export default function Home() {
     <>
       {/* Hero Banner */}
       <section className="relative">
-        {/* ในกรณีที่ไม่มีรูปภาพจริง เราจะทำเป็นพื้นที่สี gradient แทน */}
         <div className="bg-gradient-to-r from-primary/20 to-secondary/20 h-[400px] md:h-[500px] relative flex items-center">
           <div className="container">
             <div className="max-w-xl">
