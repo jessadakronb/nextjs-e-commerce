@@ -24,9 +24,7 @@ export default function Header() {
   return (
     <header
       className={`w-full transition-all duration-300 ${
-        isScrolled
-          ? "sticky top-0 shadow-md bg-background z-50"
-          : "bg-background"
+        isScrolled ? "sticky top-0 shadow-md bg-white z-50" : "bg-white"
       }`}
     >
       {/* E-Receipt Banner */}
@@ -67,7 +65,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-
       {/* Top bar */}
       <div className="border-b border-border py-1.5 hidden md:block bg-[#F8F8F8]">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
@@ -116,7 +113,7 @@ export default function Header() {
       </div>
 
       {/* Main header */}
-      <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-y-2">
+      <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-y-2 ">
         {/* Logo */}
         <a href="#" className="flex-shrink-0">
           <Image
@@ -190,11 +187,10 @@ export default function Header() {
           </button>
         </div>
       </div>
-
       {/* Categories */}
-      <div className="border-t border-gray-100">
+      <div>
         <div className="max-w-screen-xl mx-auto flex items-center overflow-x-auto whitespace-nowrap px-4">
-          <button className="flex items-center space-x-2 py-3 pr-4 bg-gray-50 hover:bg-gray-100 border-r border-gray-200 flex-shrink-0">
+          <button className=" w-[241px] flex items-center space-x-2 py-3 px-4  bg-primary hover:bg-orange-500 text-white flex-shrink-0 rounded-t-[10px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -207,7 +203,7 @@ export default function Header() {
               <line x1="4" y1="12" x2="20" y2="12" />
               <line x1="4" y1="18" x2="20" y2="18" />
             </svg>
-            <span className="text-sm font-medium">หมวดหมู่สินค้าทั้งหมด</span>
+            <span className="text-sm font-medium  ">หมวดหมู่สินค้าทั้งหมด</span>
           </button>
           <ul className="flex gap-x-4 overflow-x-auto text-sm font-medium py-3 pl-4">
             {[
@@ -229,7 +225,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-
       {/* Mobile Menu */}
       <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
     </header>

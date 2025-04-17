@@ -111,20 +111,6 @@ export default function Home() {
               <p className="text-lg mb-6">
                 ส่วนลดสูงสุด 50% พิเศษสำหรับสมาชิกใหม่
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/products/furniture"
-                  className="btn-primary btn-lg rounded-md"
-                >
-                  ช้อปเลย
-                </Link>
-                <Link
-                  href="/products"
-                  className="btn-outline btn-lg rounded-md"
-                >
-                  ดูสินค้าทั้งหมด
-                </Link>
-              </div>
             </div>
           </div>
         </div>
