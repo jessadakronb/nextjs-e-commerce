@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico", // favicon ขนาด 32x32 pixels
+    icon: "/favicon.ico", 
     shortcut: "/favicon.ico",
-    apple: "/apple-icon.png", // ไอคอนสำหรับ Apple devices (อาจมีขนาด 180x180)
+    apple: "/apple-icon.png",
     other: {
       rel: "icon",
       url: "/favicon-16x16.png",
